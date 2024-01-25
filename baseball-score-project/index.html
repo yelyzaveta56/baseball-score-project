@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Baseball Score</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3>HOME</h3>
+        <p class="home-score" id="home-score">0</p>
+      </div>
+      <div>
+        <h3>GUEST</h3>
+        <p class="guest-score" id="guest-score">0</p>
+      </div>
+    </div>
+
+    <div id="score-btns-container">
+      <div>
+        <button onclick="homePlus1()">+1</button>
+        <button onclick="homePlus2()">+2</button>
+        <button onclick="homePlus3()">+3</button>
+      </div>
+
+      <div>
+        <button onclick="guestPlus1()">+1</button>
+        <button onclick="guestPlus2()">+2</button>
+        <button onclick="guestPlus3()">+3</button>
+      </div>
+    </div>
+
+    <div class="reset-score-btn-container">
+      <button
+        id="reset-score-btn"
+        class="reset-score-btn"
+        onclick="resetScore()"
+      >
+        Reset score
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
